@@ -9,12 +9,12 @@
 @import "./base/utilities";
 
 @import "./components/button";
+@import "./components/cards";
 @import "./components/hero-form";
 
 @import "./layout/footer";
 @import "./layout/header";
+@import "./layout/sidebar";
 
 @import "./pages/about";
-@import "./pages/amrit-mahotsav";
-@import "./pages/contact";
-@import "./pages/home";
+@import"./pages/home";
