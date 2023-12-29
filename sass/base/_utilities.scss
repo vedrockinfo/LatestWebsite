@@ -1,37 +1,38 @@
-.u-center-text {
-    text-align: center;
-  }
+
   .mb-large {
-    margin-bottom: 7rem;
+    margin-bottom: 70px;
     @include respond(tab-land-before){
-      margin-bottom: 5rem;
+      margin-bottom: 50px;
     }
     @include respond(tab-port-before){
-      margin-bottom: 3rem;
+      margin-bottom: 30px;
     }
   }
     .mt-large {
-    margin-top: 7rem;
+    margin-top: 70px;
     @include respond(tab-land-before){
-      margin-top: 5rem;
+      margin-top: 50px;
     }
     @include respond(tab-port-before){
-      margin-top: 3rem;
+      margin-top: 30px;
     }
   }
   .primary-list{
     li{
       position: relative;
+      padding-left: 30px;
+      &:not(:last-child){
+        padding-bottom: 10px;
+      }
       &:before{
         content: "";
         background-image: url("../images/primary-list-01.png");
         background-size: cover;
         position: absolute;
-        top: 30%;
-        left: -30px;
+        top: 0;
+        left: 0;
         width: 20px;
         height: 20px;
-        transform: translateY(-50%);
       }
     }
   }
@@ -149,4 +150,7 @@
     .container{
       position: relative;
     }
+}
+.clr-primary{
+  color: $colorPrimary;
 }

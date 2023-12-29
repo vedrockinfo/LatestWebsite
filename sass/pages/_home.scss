@@ -1,20 +1,304 @@
 .hero-section{
-	min-height: 100vh;
-	background-color: red;
-	overflow: hidden;
-	animation: animate 4s ease-in-out infinite;
-	img{
-		mix-blend-mode: multiply;
-		width: 100%;
-		height: auto;
-		
-	}
+  #carousel{
+    .carousel-item{
+      &.nurture {
+        background-image: url("../images/slider1.jpg");
+      }
+      &.education {
+        background-image: url("../images/slider2.jpg");
+      }
+    }
+    .carousel-item {
+      height: 610px;
+      width: 100%;
+      background: no-repeat center center scroll;
+      background-size: cover;
+      transition: $transition;
+      .caption {
+        background-color: rgba($colorSecondary, 0.5);
+        padding: 40px;
+        color: $colorWhite;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        transition: $transition;
+        h2 {
+          animation-duration: 1s;
+          animation-delay: 2s;
+          transition: $transition;
+          font-size: 50px;
+    font-weight: 900;
+        }
+        p {
+          animation-duration: 1s;
+          animation-delay: 2.2s;
+          transition: $transition;
+          font-size: 36px;
+    font-weight: 300;
+        }
+        a {
+          animation-duration: 1s;
+          animation-delay: 2.4s;
+          transition: $transition;
+        }
+      }
+    }
+    .carousel-control-next, .carousel-control-prev{
+      top: auto;
+      bottom: 30px;
+      i{
+        border: 1px solid $colorWhite;
+        width: 30px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+    }
+    .carousel-control-next{
+
+    }
+    .carousel-control-prev{
+      right: 40px;
+      left: auto;
+    }
+  }  
 }
-@keyframes animate {
-	0%{
-		filter: hue-rotate(0deg);
-	}
-	100%{
-		filter: hue-rotate(360deg);
-	}
+
+.world-curriculum{
+  .curriculum-grid{
+    display: grid;
+    box-shadow: $boxShadowOne;
+    @include respond (tab-port-after){
+      grid-template-columns: repeat(2, 1fr);
+    }    
+    @include respond (tab-port-before){
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .curriculum-grid-item{
+      text-align: center;
+      @include respond (tab-port-after){
+        &:nth-child(odd){
+        border-right: 1px solid rgba($colorSecondary, 0.5);
+      }
+      &:nth-child(3){
+        border-top: 1px solid rgba($colorSecondary, 0.5);
+      }
+      &:nth-child(4){
+        border-top: 1px solid rgba($colorSecondary, 0.5);
+      }
+      }
+      @include respond (tab-port-before){
+        &:not(:last-child){
+        border-bottom: 1px solid rgba($colorSecondary, 0.5);
+      }
+      }
+      .curriculum-card{
+        padding: 3rem;
+        transition: $transition;
+        &:hover{
+          background: rgba($colorPrimary, $alpha: 0.1);
+        }
+        .c-icons{
+          margin-bottom: 30px;
+          img{
+            height: 100px;
+          }
+        }
+        .content-para{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.about-us{
+  figure{
+    position: relative;
+    figcaption{
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $colorWhite;
+      background: rgba($colorPrimary, $alpha: 1);
+      padding: 7px 10px;
+    }
+  }
+  h4{
+    background: rgba($colorSecondary, 1);
+    margin-top: 20px;
+    display: block;
+    padding: 20px;
+    color: $colorWhite;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+}
+
+.beyond-meta{
+  background: $colorPrimary;
+  padding: 70px 0;
+  @include respond(tab-land-before){
+      padding: 50px 0;
+    }
+    @include respond(tab-port-before){
+      padding: 30px 0;
+    }
+  h3, h2, p{
+    color: $colorWhite;
+    @include respond (tab-port-after){
+      text-align: left!important;
+    }
+  }
+  p{
+    text-transform: capitalize;
+  }
+  img{
+    filter: invert(1) brightness(8) sepia(1);
+  }
+  hr {
+    border-color: #fff;
+}
+}
+.global-classroom{
+  padding: 70px 0;
+  background: #f7f7f7;
+  @include respond(tab-land-before){
+      padding: 50px 0;
+    }
+    @include respond(tab-port-before){
+      padding: 30px 0;
+    }
+}
+.building-block{
+  .sub-heading{
+    background: rgba($colorPrimary, $alpha: 1);
+    display: inline-block;
+    padding: 10px 50px 10px 10px;
+  }
+  .classroom-card{
+    .classroom-pics{
+      img{
+
+      }
+    }
+    .classrooms-contents{
+      padding: 30px 20px;
+      min-height: 290px;
+      position: relative;
+      border: 1px solid rgba($colorSecondary, 1);
+      h4 a{
+        color: inherit;
+      }
+      .btn{
+        position: absolute;
+        bottom: 50px;
+      }
+    }
+  }
+  .building-blocks-grid{
+    display: grid;
+    @include respond (tab-port-after){
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 1.5rem;
+    }
+    gap: 30px;
+    .building-blocks-grid-item{
+      text-align: center;
+      color: $colorWhite;
+      padding: 30px 0;
+    border-radius: 10px;
+    position: relative;
+    background:  var(--clr);
+    transform: rotateY(0deg);
+    transition: $transition;
+    &:hover{
+      transform: rotateY(360deg);
+    }
+      &:nth-child(2){
+        @include respond (tab-port-after){
+          top: 5rem;
+        }
+      }
+      &:nth-child(4){
+        @include respond (tab-port-after){
+          top: 5rem;
+        }
+      }
+      h2{
+        font-weight: 900;
+        background: $colorWhite;
+    color: var(--clr);
+    padding: 10px;
+    width: 58px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: inline-block;
+      }
+      h6 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+}
+        span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    // border-top: 1px solid $colorWhite;
+    // border-bottom: 1px solid $colorWhite;
+}
+    }
+  }
+  .owl-nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+  }
+  .owl-next, .owl-prev{
+        &:focus{
+          border: none;
+          outline: none;
+        }
+        i{
+          border: 1px solid rgba($colorSecondary, 1);
+          padding: 10px;
+    aspect-ratio: 1;
+    width: 38px;
+    transition: $transition;
+    &:hover{
+      color: $colorWhite;
+      border-color: $colorSecondary;
+      background: rgba($colorSecondary, 1);
+    }
+        }
+      }
+}
+.testimonials{
+  .testimonial-card{
+    text-align: center;
+    i{
+      font-size: 100px;
+      color: rgba($colorPrimary, $alpha: 0.3);
+    }
+  }
+  button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left:-30px;
+    transform: translateY(-50%);
+}
+button.owl-next {
+    position: absolute;
+    top: 50%;
+    right:-30px;
+    transform: translateY(-50%);
+}
 }
