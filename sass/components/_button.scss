@@ -35,3 +35,16 @@
         border-color: $colorSecondary;
     }
 }
+.global-btn-four {
+    color: $colorWhite;
+    background: $colorSecondary;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 1.5px solid $colorSecondary;
+    transition: $transition;
+    &:hover{
+        background: transparent;
+        color: $colorSecondary;
+        border-color: $colorSecondary;
+    }
+}

@@ -155,6 +155,14 @@ h2.primary-heading {
   font-style: oblique;
   text-transform: uppercase; }
 
+.inner-primary-heading {
+  margin-bottom: 5px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center; }
+
 .content-para p, .content-para li {
   font-size: 16px;
   line-height: 30px;
@@ -267,7 +275,7 @@ h2.primary-heading {
 
 .innerherobanner {
   width: 100%;
-  height: 350px;
+  height: 150px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -338,6 +346,18 @@ h2.primary-heading {
     color: #fff;
     border-color: #114B5F; }
 
+.global-btn-four {
+  color: #fff;
+  background: #114B5F;
+  border-radius: 20px;
+  text-transform: capitalize;
+  border: 1.5px solid #114B5F;
+  transition: 0.4s ease; }
+  .global-btn-four:hover {
+    background: transparent;
+    color: #114B5F;
+    border-color: #114B5F; }
+
 footer .footer {
   background: #114B5F;
   padding: 4rem 0; }
@@ -381,6 +401,13 @@ footer .copyright {
   footer .copyright p {
     margin: 0;
     color: rgba(255, 255, 255, 0.7); }
+
+header button.navbar-toggler {
+  line-height: normal; }
+  header button.navbar-toggler:focus {
+    outline: none; }
+  header button.navbar-toggler .fa-bars {
+    color: #fff; }
 
 header .topheader {
   background: #114B5F; }
@@ -475,57 +502,241 @@ header .mainheader .navbar {
       header .mainheader .navbar a.nav-link {
         padding: 10px 6.5px; } }
 
-.hero-section #carousel .carousel-item.nurture {
-  background-image: url("../images/slider1.jpg"); }
+.big-dream .primary-heading {
+  color: #ed8446; }
+  @media only screen and (min-width: 768.1px) {
+    .big-dream .primary-heading {
+      text-align: left; } }
 
-.hero-section #carousel .carousel-item.education {
-  background-image: url("../images/slider2.jpg"); }
+@media only screen and (max-width: 768px) {
+  .big-dream .row {
+    flex-direction: column-reverse; }
+    .big-dream .row .primary-heading {
+      margin-top: 2rem; } }
 
-.hero-section #carousel .carousel-item {
-  height: 610px;
-  width: 100%;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  transition: 0.4s ease; }
-  .hero-section #carousel .carousel-item .caption {
-    background-color: rgba(17, 75, 95, 0.5);
-    padding: 40px;
-    color: #fff;
-    animation-duration: 1s;
-    animation-delay: 2s;
+@media only screen and (max-width: 768px) {
+  .purpose .col-md-3 {
+    text-align: center;
+    margin-bottom: 2rem; } }
+
+@media only screen and (min-width: 768.1px) {
+  .purpose .about-content p {
+    font-size: 20px;
+    font-weight: 300; } }
+
+.purpose h6 {
+  background: #ed8446;
+  padding: 7px 15px;
+  margin-top: 2rem; }
+
+.purpose img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  outline: 4px solid #ed8446;
+  aspect-ratio: 1 / 1; }
+
+.purpose .col-md-9 span {
+  display: block; }
+
+.experience-team {
+  background: #114B5F;
+  padding: 70px 0;
+  position: relative; }
+  .experience-team::before {
+    content: "";
+    background-image: url(../images/exp-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .experience-team .container {
+    position: relative; }
+  @media only screen and (max-width: 992px) {
+    .experience-team {
+      padding: 50px 0; } }
+  @media only screen and (max-width: 768px) {
+    .experience-team {
+      padding: 30px 0; } }
+  .experience-team .content-para {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem; }
+  @media only screen and (max-width: 992px) {
+    .experience-team .sub-heading {
+      text-align: center;
+      margin-top: 2rem; } }
+  .experience-team ul li {
+    color: #fff; }
+    .experience-team ul li::before {
+      filter: brightness(10); }
+  @media only screen and (max-width: 992px) {
+    .experience-team .d-flex {
+      justify-content: center; } }
+  @media only screen and (max-width: 768px) {
+    .experience-team .d-flex {
+      flex-direction: column;
+      gap: 20px; }
+      .experience-team .d-flex a {
+        margin: auto; } }
+    @media only screen and (max-width: 768px) and (min-width: 310px) {
+      .experience-team .d-flex a {
+        width: 230px; } }
+  @media only screen and (min-width: 768.1px) {
+    .experience-team .global-btn-one {
+      margin-right: 15px; } }
+
+.advisors-team .advisors-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 992px) {
+    .advisors-team .advisors-grid {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center; } }
+  @media only screen and (max-width: 768px) {
+    .advisors-team .advisors-grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 575px) {
+    .advisors-team .advisors-grid {
+      grid-template-columns: repeat(1, 1fr); } }
+  .advisors-team .advisors-grid .advisor-grid-item {
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
     transition: 0.4s ease; }
-    .hero-section #carousel .carousel-item .caption h2 {
-      animation-duration: 1s;
-      animation-delay: 2s;
-      transition: 0.4s ease;
-      font-size: 50px;
-      font-weight: 900; }
-    .hero-section #carousel .carousel-item .caption p {
-      animation-duration: 1s;
-      animation-delay: 2.2s;
-      transition: 0.4s ease;
-      font-size: 36px;
-      font-weight: 300; }
-    .hero-section #carousel .carousel-item .caption a {
-      animation-duration: 1s;
-      animation-delay: 2.4s;
+    .advisors-team .advisors-grid .advisor-grid-item::before {
+      content: "";
+      background: #ed8446;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
       transition: 0.4s ease; }
+    .advisors-team .advisors-grid .advisor-grid-item:hover {
+      transform: translateY(-5px); }
+      .advisors-team .advisors-grid .advisor-grid-item:hover::before {
+        width: 100%; }
+    .advisors-team .advisors-grid .advisor-grid-item .adv-content {
+      padding: 30px 6px; }
+    .advisors-team .advisors-grid .advisor-grid-item .heading-fourth {
+      font-size: 14px;
+      padding: 0 0 6px 0; }
+    .advisors-team .advisors-grid .advisor-grid-item p {
+      margin-bottom: 0;
+      line-height: 1; }
 
-.hero-section #carousel .carousel-control-next, .hero-section #carousel .carousel-control-prev {
-  top: auto;
-  bottom: 30px; }
-  .hero-section #carousel .carousel-control-next i, .hero-section #carousel .carousel-control-prev i {
-    border: 1px solid #fff;
-    width: 30px;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; }
+.countries-approach .country-list h4 {
+  background: #114B5F;
+  padding: 15px 20px;
+  margin-bottom: 0;
+  font-weight: normal; }
 
-.hero-section #carousel .carousel-control-prev {
-  right: 40px;
-  left: auto; }
+.countries-approach .country-list ul {
+  padding: 20px 20px 10px;
+  border-left: 1px solid #114b5f;
+  border-right: 1px solid #114b5f;
+  border-bottom: 1px solid #114b5f; }
+  .countries-approach .country-list ul li:not(:last-child) {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(17, 75, 95, 0.3); }
+  .countries-approach .country-list ul li img {
+    height: 24px;
+    width: 36px;
+    object-fit: cover;
+    margin-right: 6px; }
+
+.awards-fellow .recent-posts {
+  padding: 20px;
+  background: #f2f2f2; }
+  @media only screen and (max-width: 1200px) {
+    .awards-fellow .recent-posts {
+      min-height: 283px; } }
+  @media only screen and (min-width: 1200.1px) {
+    .awards-fellow .recent-posts {
+      min-height: 283px; } }
+
+.awards-fellow .owl-dots {
+  text-align: center; }
+  .awards-fellow .owl-dots .owl-dot span {
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    display: block;
+    background: #114B5F; }
+  .awards-fellow .owl-dots .owl-dot:not(:last-child) {
+    margin-right: 6px; }
+  .awards-fellow .owl-dots .owl-dot.active span {
+    background: #ed8446; }
+
+.hero-section {
+  position: relative; }
+  @media screen and (max-width: 999.9px) {
+    .hero-section .intrst iframe {
+      width: 100%; } }
+  @media screen and (min-width: 1000px) {
+    .hero-section .intrst {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-10px, -49.5%); } }
+  .hero-section #carousel .carousel-item.nurture {
+    background-image: url("../images/slider1.jpg"); }
+  .hero-section #carousel .carousel-item.education {
+    background-image: url("../images/slider2.jpg"); }
+  .hero-section #carousel .carousel-item {
+    height: 610px;
+    width: 100%;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    transition: 0.4s ease; }
+    .hero-section #carousel .carousel-item .caption {
+      background-color: rgba(17, 75, 95, 0.5);
+      padding: 40px;
+      color: #fff;
+      animation-duration: 1s !important;
+      animation-delay: 0.5s;
+      transition: 0.4s ease; }
+      .hero-section #carousel .carousel-item .caption h2 {
+        animation-duration: 1s !important;
+        animation-delay: 0.6s;
+        transition: 0.4s ease;
+        font-size: 50px;
+        font-weight: 900; }
+      .hero-section #carousel .carousel-item .caption p {
+        animation-duration: 1s !important;
+        animation-delay: 1s;
+        transition: 0.4s ease;
+        font-size: 36px;
+        font-weight: 300; }
+      .hero-section #carousel .carousel-item .caption a {
+        animation-duration: 1s !important;
+        animation-delay: 1.3s;
+        transition: 0.4s ease; }
+  .hero-section #carousel .carousel-control-next, .hero-section #carousel .carousel-control-prev {
+    top: auto;
+    bottom: 30px; }
+    .hero-section #carousel .carousel-control-next i, .hero-section #carousel .carousel-control-prev i {
+      border: 1px solid #fff;
+      width: 30px;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; }
+  .hero-section #carousel .carousel-control-next {
+    right: auto;
+    left: 40px; }
+  .hero-section #carousel .carousel-control-prev {
+    right: auto;
+    left: 0; }
 
 .world-curriculum .curriculum-grid {
   display: grid;

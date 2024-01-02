@@ -1,4 +1,13 @@
 header{
+	button.navbar-toggler {
+    line-height: normal;
+	&:focus{
+		outline: none;
+	}
+	.fa-bars {
+    color: $colorWhite;
+}
+}
 	.topheader{
 		background: $colorSecondary;
 		.quicklinks{
