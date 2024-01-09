@@ -75,12 +75,12 @@ body {
 .inner-primary-heading {
     margin-bottom: 5px;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 800;
     color: $colorWhite;
     text-transform: uppercase;
     text-align: center;
 }
-.content-para p, .content-para li {
+.content-para p, .content-para li, th, td {
   font-size: 16px;
   line-height: 30px;
   font-weight: normal;
