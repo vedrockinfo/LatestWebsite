@@ -158,23 +158,23 @@ h2.primary-heading {
 .inner-primary-heading {
   margin-bottom: 5px;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 800;
   color: #fff;
   text-transform: uppercase;
   text-align: center; }
 
-.content-para p, .content-para li {
+.content-para p, .content-para li, th, td {
   font-size: 16px;
   line-height: 30px;
   font-weight: normal; }
-  .content-para p:last-child, .content-para li:last-child {
+  .content-para p:last-child, .content-para li:last-child, th:last-child, td:last-child {
     margin-bottom: 0; }
   @media only screen and (max-width: 992px) {
-    .content-para p, .content-para li {
+    .content-para p, .content-para li, th, td {
       font-size: 16px;
       line-height: 1.7; } }
   @media only screen and (max-width: 768px) {
-    .content-para p, .content-para li {
+    .content-para p, .content-para li, th, td {
       font-size: 15px;
       line-height: 1.7; } }
 
@@ -923,3 +923,138 @@ header .mainheader .navbar {
   top: 50%;
   right: -30px;
   transform: translateY(-50%); }
+
+@media only screen and (max-width: 992px) {
+  .compete-future .row {
+    flex-direction: column-reverse; } }
+
+.compete-future .item img {
+  height: 270px;
+  object-fit: cover; }
+
+.mission-table table td {
+  border: 1px solid #114B5F;
+  border-collapse: collapse;
+  padding: 10px; }
+
+.mission-table table th {
+  border: 1px solid #ed8446;
+  border-collapse: collapse;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.mission-table table thead {
+  background: #ed8446; }
+  .mission-table table thead th {
+    text-align: center;
+    color: #fff; }
+
+.mission-vision {
+  padding: 70px 0; }
+  @media only screen and (min-width: 992.1px) {
+    .mission-vision {
+      background: linear-gradient(90deg, white 50%, #ed8446 50%); } }
+  @media only screen and (max-width: 992px) {
+    .mission-vision {
+      padding: 50px 0; }
+      .mission-vision .content-para {
+        background: #ed8446;
+        padding: 30px 0;
+        margin-top: 30px; } }
+  @media only screen and (max-width: 768px) {
+    .mission-vision {
+      padding: 30px 0; } }
+  @media only screen and (min-width: 768.1px) {
+    .mission-vision .content-para {
+      padding-left: 40px; } }
+  .mission-vision blockquote {
+    border-left: 4px solid #fff;
+    padding: 10px; }
+    @media only screen and (min-width: 768.1px) {
+      .mission-vision blockquote {
+        margin-left: 20px;
+        font-size: 20px; } }
+
+.values .service-item {
+  position: relative;
+  padding-top: 40px; }
+  .values .service-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-image: linear-gradient(90deg, #ed8446 7.5%, rgba(17, 75, 95, 0.2) 7.5%); }
+  .values .service-item:hover h4 {
+    color: #ed8446; }
+
+.values .icon {
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  margin-right: 50px;
+  line-height: 1.3;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 0;
+  text-align: center;
+  border: 4px solid #fff;
+  outline: 4px solid; }
+  .values .icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700; }
+  .values .icon.way-1 {
+    background: #1f4b96;
+    outline-color: #1f4b96; }
+  .values .icon.way-2 {
+    background: #075792;
+    outline-color: #075792; }
+  .values .icon.way-3 {
+    background: #0a6d94;
+    outline-color: #0a6d94; }
+  .values .icon.way-4 {
+    background: #077a8d;
+    outline-color: #077a8d; }
+  .values .icon.way-5 {
+    background: #117c6a;
+    outline-color: #117c6a; }
+  .values .icon.way-6 {
+    background: #159655;
+    outline-color: #159655; }
+  .values .icon::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: rgba(237, 132, 70, 0.3);
+    border-radius: 50px;
+    z-index: 1;
+    bottom: -15px;
+    right: 0;
+    transition: 0.3s;
+    mix-blend-mode: color-dodge; }
+  .values .icon img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    padding: 7px;
+    object-position: center; }
+
+.values h4.title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ed8446;
+  transition: 0.4s ease; }
+
+.values .content-para {
+  margin-bottom: 3rem;
+  transition: 0.4s ease; }
