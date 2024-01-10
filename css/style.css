@@ -312,6 +312,18 @@ h2.primary-heading {
 .clr-primary {
   color: #ed8446; }
 
+.blockquote {
+  background: rgba(237, 132, 70, 0.1);
+  padding: 2rem 1.5rem 2rem 3rem;
+  border-left: 5px solid #ed8446;
+  font-size: 26px;
+  line-height: normal;
+  font-weight: 300;
+  margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .blockquote {
+      font-size: 18px; } }
+
 .global-btn-one {
   color: #114B5F;
   background: #fff;
@@ -1058,3 +1070,54 @@ header .mainheader .navbar {
 .values .content-para {
   margin-bottom: 3rem;
   transition: 0.4s ease; }
+
+.curriculum-section h2 {
+  margin-bottom: 0; }
+
+.curriculum-section .nav-pills {
+  margin-top: 40px;
+  margin-bottom: 0 !important; }
+
+.curriculum-section li.nav-item {
+  width: calc(100% / 6);
+  text-align: center; }
+  @media screen and (max-width: 992px) {
+    .curriculum-section li.nav-item {
+      width: calc(100% / 3); } }
+  @media screen and (max-width: 768px) {
+    .curriculum-section li.nav-item {
+      width: calc(100% / 2); } }
+  .curriculum-section li.nav-item a {
+    color: #114B5F;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    border: 1px solid #ed8446;
+    background: rgba(237, 132, 70, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem; }
+    .curriculum-section li.nav-item a.active {
+      background: #ed8446; }
+      .curriculum-section li.nav-item a.active i {
+        color: #fff; }
+  .curriculum-section li.nav-item i {
+    color: #ed8446;
+    font-size: 1.5rem;
+    padding-right: 5px; }
+
+.curriculum-section .tab-pane {
+  padding: 30px 40px;
+  border-top: none !important;
+  border: 1px solid #ed8446;
+  overflow-x: auto; }
+  .curriculum-section .tab-pane table thead {
+    background: #ed8446; }
+    .curriculum-section .tab-pane table thead th {
+      color: #fff; }
+  .curriculum-section .tab-pane table tbody tr {
+    transition: all 0.5s; }
+    .curriculum-section .tab-pane table tbody tr:nth-child(even) {
+      background: rgba(204, 204, 204, 0.4); }
+    .curriculum-section .tab-pane table tbody tr:hover {
+      background: rgba(237, 132, 70, 0.1); }

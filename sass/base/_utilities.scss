@@ -154,3 +154,15 @@
 .clr-primary{
   color: $colorPrimary;
 }
+.blockquote{
+  background: rgba($colorPrimary, 0.1);
+  padding: 2rem 1.5rem 2rem 3rem;
+  border-left: 5px solid $colorPrimary;
+  font-size: 26px;
+    line-height: normal;
+    font-weight: 300;
+    margin-bottom: 0;
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+    }
+}
