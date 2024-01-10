@@ -1121,3 +1121,110 @@ header .mainheader .navbar {
       background: rgba(204, 204, 204, 0.4); }
     .curriculum-section .tab-pane table tbody tr:hover {
       background: rgba(237, 132, 70, 0.1); }
+
+.self-confidence {
+  background: #114B5F;
+  padding: 70px 0; }
+  .self-confidence .sel-ref {
+    text-align: center;
+    font-size: 2rem;
+    background: #0f4152;
+    padding: 1.5rem; }
+    .self-confidence .sel-ref i {
+      color: #fff; }
+    .self-confidence .sel-ref h4 {
+      margin-bottom: 0;
+      font-weight: 300;
+      font-size: 24px; }
+
+.teacher-brand {
+  padding: 70px 0;
+  position: relative; }
+  .teacher-brand::before {
+    content: "";
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5baa344ea56827921b901e3e/1537887033415-G0TUIA40QHPEOJWUDLK8/testimonial-background.jpg?format=2500w);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    height: 100%; }
+  .teacher-brand .container {
+    position: relative; }
+  .teacher-brand h6 {
+    margin-bottom: calc(3rem - 30px); }
+  .teacher-brand .item {
+    padding: 30px; }
+  .teacher-brand .b-testimonial {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    min-height: 485px; }
+    @media screen and (max-width: 768px) {
+      .teacher-brand .b-testimonial {
+        padding: 2rem; } }
+    .teacher-brand .b-testimonial__pic {
+      text-align: center; }
+      .teacher-brand .b-testimonial__pic img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        outline: 4px solid #ed8446;
+        object-fit: cover;
+        object-position: top;
+        margin: 0 auto 30px; }
+    .teacher-brand .b-testimonial__data {
+      text-align: center; }
+      .teacher-brand .b-testimonial__data h4 {
+        margin-top: 0;
+        margin-top: 3rem; }
+      .teacher-brand .b-testimonial__data h6 {
+        font-weight: 400;
+        font-size: 14px;
+        font-style: oblique;
+        text-align: center; }
+  .teacher-brand .owl-nav .owl-prev, .teacher-brand .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-content: center; }
+  .teacher-brand .owl-nav .owl-prev {
+    left: 0; }
+  .teacher-brand .owl-nav .owl-next {
+    right: 0; }
+
+.core-competentcies h6.heading-current {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.core-competentcies .border-02 {
+  background: #ed8446;
+  height: 5px;
+  width: 10rem;
+  margin: 1rem 0 2rem 0; }
+
+.core-competentcies img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; }
+
+@media screen and (max-width: 992px) {
+  .core-competentcies .primary-list {
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 992px) {
+  .core-competentcies h6 {
+    margin-top: 40px; } }

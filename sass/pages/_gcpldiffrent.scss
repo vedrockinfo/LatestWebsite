@@ -64,3 +64,132 @@
     }
 }
 }
+.self-confidence{
+    background: $colorSecondary;
+    padding: 70px 0;
+    .sel-ref{
+        text-align: center;
+        font-size: 2rem;
+        background: darken($colorSecondary, $amount: 3);
+        padding: 1.5rem;
+        i{
+            color: $colorWhite;
+        }
+        h4{
+            margin-bottom: 0;
+            font-weight: 300;
+            font-size: 24px;
+        }
+    }
+}
+.teacher-brand{
+    padding: 70px 0;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(https://images.squarespace-cdn.com/content/v1/5baa344ea56827921b901e3e/1537887033415-G0TUIA40QHPEOJWUDLK8/testimonial-background.jpg?format=2500w);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        height: 100%;
+    }
+    .container{
+        position: relative;
+    }
+    h6{
+        margin-bottom: calc(3rem - 30px);
+    }
+    .item{
+        padding: 30px;
+    }
+    .b-testimonial{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background: rgba($colorWhite, $alpha: 1);
+        padding: 2rem 4rem;
+        @media screen and (max-width:768px) {
+            padding: 2rem;
+        }
+        border-radius: 10px;
+        min-height: 485px;
+        &__pic{
+            text-align: center;
+            img{
+                width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            border: 2px solid rgba($colorWhite, $alpha: 1);
+            outline: 4px solid $colorPrimary;
+            object-fit: cover;
+            object-position: top;
+            margin: 0 auto 30px;
+            }
+        }
+        &__data{
+            text-align: center;
+            h4{
+                margin-top: 0;
+                margin-top: 3rem;
+            }
+            h6{
+                font-weight: 400;
+                font-size: 14px;
+                font-style: oblique;
+                text-align: center;
+            }
+        }
+    }
+    .owl-nav{
+        .owl-prev, .owl-next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba($colorWhite, $alpha: 1)!important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            height: 35px;
+            width: 35px;
+            display: grid;
+            place-content: center;
+        }
+        .owl-prev{
+            left: 0;
+        }
+        .owl-next{
+            right: 0;
+        }
+    }
+}
+.core-competentcies{
+    h6.heading-current {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.border-02{
+    background: rgba($colorPrimary, $alpha: 1);
+    height: 5px;
+    width: 10rem;
+    margin: 1rem 0 2rem 0;
+}
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .primary-list{
+        @media screen and (max-width:992px) {
+            margin-bottom: 40px;
+        }
+    }
+    h6{
+        @media screen and (max-width:992px) {
+            margin-top: 40px;
+        }
+    }
+}

@@ -100,3 +100,25 @@ $('.com-future').owlCarousel({
     }
   }
 })
+
+$('.tbrands').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: true,
+  dots: false,
+  autoplay: true,
+  navText: ['<i class="fa-solid fa-arrow-left-long"></i>', '<i class="fa-solid fa-arrow-right-long"></i>'],
+  autoplayTimeout: 3000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+})
