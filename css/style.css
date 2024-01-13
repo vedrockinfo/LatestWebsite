@@ -1838,5 +1838,23 @@ header .mainheader .navbar {
     .geti-action {
       padding: 30px 0; } }
 
-.geri-ebook table tr td:last-child {
-  text-align: center; }
+.geri-ebook table tr td:not(:first-child) {
+  text-align: center;
+  vertical-align: middle; }
+  .geri-ebook table tr td:not(:first-child) .fa-solid, .geri-ebook table tr td:not(:first-child) i {
+    font-size: 20px; }
+  .geri-ebook table tr td:not(:first-child) .fa-solid {
+    transform: rotate(-20deg); }
+  .geri-ebook table tr td:not(:first-child) a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+    gap: 6px;
+    height: 100%;
+    color: #ed8446; }
+    .geri-ebook table tr td:not(:first-child) a:hover {
+      text-decoration: none;
+      color: #114B5F; }
