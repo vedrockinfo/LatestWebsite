@@ -712,6 +712,60 @@ header .mainheader .navbar {
   .awards-fellow .owl-dots .owl-dot.active span {
     background: #ed8446; }
 
+.contact-area form {
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  padding: 40px 60px; }
+  .contact-area form .btn-submit {
+    color: #fff;
+    background: #ed8446;
+    border: 1px solid #ed8446;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 20px;
+    margin-top: 12px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: all 0.5s; }
+    .contact-area form .btn-submit:focus {
+      transform: scale(1.1); }
+  .contact-area form textarea {
+    resize: none; }
+
+.contact-area .form-control {
+  font-size: 14px !important; }
+  .contact-area .form-control:focus {
+    box-shadow: none !important;
+    outline: none !important; }
+
+.contact-area .contact-list li:not(:last-child) {
+  margin-bottom: 30px; }
+
+.contact-area .c-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 150px;
+  border-radius: 10px;
+  padding: 0 30px; }
+  .contact-area .c-wrapper .con-heading {
+    font-size: 16px;
+    font-weight: 500;
+    gap: 10px; }
+    .contact-area .c-wrapper .con-heading a {
+      color: inherit;
+      display: block;
+      transition: all 0.5s; }
+      .contact-area .c-wrapper .con-heading a:hover {
+        text-decoration: none;
+        color: #ed8446; }
+  .contact-area .c-wrapper i {
+    display: block;
+    font-size: 28px; }
+
 @media screen and (max-width: 767.9px) {
   .our-franchise .row {
     gap: 25px; } }
@@ -1354,6 +1408,56 @@ header .mainheader .navbar {
 @media screen and (max-width: 992px) {
   .core-competentcies h6 {
     margin-top: 40px; } }
+
+.group-media .media-container {
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.5s; }
+  .group-media .media-container:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
+  .group-media .media-container a {
+    position: relative;
+    display: block; }
+    .group-media .media-container a::before {
+      content: "";
+      background: #114B5F;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s; }
+    .group-media .media-container a:hover::before {
+      opacity: 0.5;
+      visibility: visible; }
+    .group-media .media-container a:hover img {
+      transform: scale(1.1); }
+    .group-media .media-container a img {
+      transition: all 0.5s;
+      width: 100%;
+      object-fit: cover; }
+    .group-media .media-container a span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      background: #114B5F;
+      color: #fff;
+      border: 1px solid #114B5F;
+      padding: 4px 25px;
+      border-radius: 50px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: all 0.5s; }
+      .group-media .media-container a span:hover {
+        background: #fff;
+        color: #114B5F;
+        border-color: #fff; }
 
 .gcpl-media .media-container {
   overflow: hidden;
