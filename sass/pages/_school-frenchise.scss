@@ -1,0 +1,36 @@
+.frenchie-partner{
+    background: #f0f0f0;
+     padding: 70px 0;
+    @include respond(tab-land-before){
+      padding: 50px 0;
+    }
+    @include respond(tab-port-before){
+      padding: 30px 0;
+    }
+    .sub-heading{
+        margin-bottom: 30px;
+    }
+    img{
+        mix-blend-mode: darken;
+    }
+}
+
+.geti-action{
+    padding: 70px 0;
+    background: #dff0d8;
+    @include respond(tab-land-before){
+      padding: 50px 0;
+    }
+    @include respond(tab-port-before){
+      padding: 30px 0;
+    }
+}
+.geri-ebook{
+    table{
+        tr{
+            td:last-child{
+                text-align: center;
+            }
+        }
+    }
+}
