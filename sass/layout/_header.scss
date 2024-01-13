@@ -98,13 +98,24 @@ header{
 	.mainheader{
 		.desktop-logo {
 			background: $colorWhite;
-			@include respond (tab-land-after){
+			@media screen and (min-width:991.9px){
 				display: none;
 			}
 			padding: 6px 10px;
 		}
 		.navbar{
 			background: $colorPrimary;
+			.navbar-nav{
+				@media screen and (min-width:992.1px) {
+					justify-content: space-between;
+    width: 100%;
+				}
+			}
+			li.nav-item{
+				&:nth-child(8){
+					display: none;
+				}
+			}
 			&.fixed-top {
 				top: -40px;
 				background: $colorPrimary;

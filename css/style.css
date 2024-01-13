@@ -312,6 +312,36 @@ h2.primary-heading {
 .clr-primary {
   color: #ed8446; }
 
+.blockquote {
+  background: rgba(237, 132, 70, 0.1);
+  padding: 2rem 1.5rem 2rem 3rem;
+  border-left: 5px solid #ed8446;
+  font-size: 26px;
+  line-height: normal;
+  font-weight: 300;
+  margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .blockquote {
+      font-size: 18px; } }
+
+@media screen and (min-width: 768px) {
+  img.left-side {
+    width: 30rem !important;
+    height: 278px !important;
+    object-fit: cover;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+  img.right-side {
+    width: 30rem !important;
+    height: 278px !important;
+    object-fit: cover;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem; } }
+
 .global-btn-one {
   color: #114B5F;
   background: #fff;
@@ -478,12 +508,18 @@ header .bottomheader {
 header .mainheader .desktop-logo {
   background: #fff;
   padding: 6px 10px; }
-  @media only screen and (min-width: 992.1px) {
+  @media screen and (min-width: 991.9px) {
     header .mainheader .desktop-logo {
       display: none; } }
 
 header .mainheader .navbar {
   background: #ed8446; }
+  @media screen and (min-width: 992.1px) {
+    header .mainheader .navbar .navbar-nav {
+      justify-content: space-between;
+      width: 100%; } }
+  header .mainheader .navbar li.nav-item:nth-child(8) {
+    display: none; }
   header .mainheader .navbar.fixed-top {
     top: -40px;
     background: #ed8446;
@@ -675,6 +711,108 @@ header .mainheader .navbar {
     margin-right: 6px; }
   .awards-fellow .owl-dots .owl-dot.active span {
     background: #ed8446; }
+
+@media screen and (max-width: 767.9px) {
+  .our-franchise .row {
+    gap: 25px; } }
+
+.our-franchise .franchise-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 60px 30px 30px;
+  position: relative;
+  transition: all 0.5s; }
+  .our-franchise .franchise-card::before {
+    content: "";
+    position: absolute;
+    background: #ed8446;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s; }
+  .our-franchise .franchise-card:hover {
+    transform: translateY(-5px);
+    background: rgba(237, 132, 70, 0.065487); }
+    .our-franchise .franchise-card:hover::before {
+      width: 100%; }
+  .our-franchise .franchise-card__img {
+    text-align: center; }
+    .our-franchise .franchise-card__img img {
+      margin: 0 auto 30px; }
+      @media screen and (min-width: 767.9px) {
+        .our-franchise .franchise-card__img img {
+          width: 220px;
+          aspect-ratio: 1;
+          object-fit: contain; } }
+  .our-franchise .franchise-card__content {
+    text-align: center; }
+    .our-franchise .franchise-card__content span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: fit-content;
+      padding: 10px;
+      color: #fff;
+      background: #114B5F; }
+    .our-franchise .franchise-card__content h6 {
+      text-align: center; }
+    .our-franchise .franchise-card__content a {
+      color: #fff;
+      background: #ed8446;
+      border: 1px solid #ed8446;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px 20px;
+      margin-top: 12px;
+      display: inline-block;
+      border-radius: 20px;
+      transition: all 0.5s; }
+      .our-franchise .franchise-card__content a:hover {
+        color: #114B5F;
+        background: #fff;
+        border-color: #114B5F;
+        text-decoration: none; }
+
+.contact-franchise {
+  background: #020024;
+  background: linear-gradient(90deg, #ed8446 50%, #114B5F 50%);
+  padding: 40px 0; }
+  @media screen and (max-width: 767.9px) {
+    .contact-franchise {
+      background: linear-gradient(163.3deg, #ed8446 50%, #114B5F 50%); } }
+  .contact-franchise h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase; }
+    @media screen and (max-width: 767.9px) {
+      .contact-franchise h2 {
+        font-size: 36px; } }
+  .contact-franchise h6 {
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    @media screen and (max-width: 767.9px) {
+      .contact-franchise h6 {
+        font-size: 20px; } }
+  .contact-franchise .d-flex {
+    gap: 20px; }
+    @media screen and (min-width: 768.1px) {
+      .contact-franchise .d-flex {
+        justify-content: flex-end; } }
+  @media screen and (max-width: 767.9px) {
+    .contact-franchise .d-flex {
+      justify-content: center;
+      margin-top: 20px; }
+    .contact-franchise .row.align-items-center h2, .contact-franchise .row.align-items-center h6 {
+      text-align: center; } }
+  @media only screen and (max-width: 992px) {
+    .contact-franchise {
+      padding: 30px 0; } }
+  @media only screen and (max-width: 768px) {
+    .contact-franchise {
+      padding: 30px 0; } }
 
 .hero-section {
   position: relative; }
@@ -1058,3 +1196,516 @@ header .mainheader .navbar {
 .values .content-para {
   margin-bottom: 3rem;
   transition: 0.4s ease; }
+
+.curriculum-section h2 {
+  margin-bottom: 0; }
+
+.curriculum-section .nav-pills {
+  margin-top: 40px;
+  margin-bottom: 0 !important; }
+
+.curriculum-section li.nav-item {
+  width: calc(100% / 6);
+  text-align: center; }
+  @media screen and (max-width: 992px) {
+    .curriculum-section li.nav-item {
+      width: calc(100% / 3); } }
+  @media screen and (max-width: 768px) {
+    .curriculum-section li.nav-item {
+      width: calc(100% / 2); } }
+  .curriculum-section li.nav-item a {
+    color: #114B5F;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    border: 1px solid #ed8446;
+    background: rgba(237, 132, 70, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem; }
+    .curriculum-section li.nav-item a.active {
+      background: #ed8446; }
+      .curriculum-section li.nav-item a.active i {
+        color: #fff; }
+  .curriculum-section li.nav-item i {
+    color: #ed8446;
+    font-size: 1.5rem;
+    padding-right: 5px; }
+
+.curriculum-section .tab-pane {
+  padding: 30px 40px;
+  border-top: none !important;
+  border: 1px solid #ed8446;
+  overflow-x: auto; }
+  .curriculum-section .tab-pane table thead {
+    background: #ed8446; }
+    .curriculum-section .tab-pane table thead th {
+      color: #fff; }
+  .curriculum-section .tab-pane table tbody tr {
+    transition: all 0.5s; }
+    .curriculum-section .tab-pane table tbody tr:nth-child(even) {
+      background: rgba(204, 204, 204, 0.4); }
+    .curriculum-section .tab-pane table tbody tr:hover {
+      background: rgba(237, 132, 70, 0.1); }
+
+.self-confidence {
+  background: #114B5F;
+  padding: 70px 0; }
+  .self-confidence .sel-ref {
+    text-align: center;
+    font-size: 2rem;
+    background: #0f4152;
+    padding: 1.5rem; }
+    .self-confidence .sel-ref i {
+      color: #fff; }
+    .self-confidence .sel-ref h4 {
+      margin-bottom: 0;
+      font-weight: 300;
+      font-size: 24px; }
+
+.teacher-brand {
+  padding: 70px 0;
+  position: relative; }
+  .teacher-brand::before {
+    content: "";
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5baa344ea56827921b901e3e/1537887033415-G0TUIA40QHPEOJWUDLK8/testimonial-background.jpg?format=2500w);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    height: 100%; }
+  .teacher-brand .container {
+    position: relative; }
+  .teacher-brand h6 {
+    margin-bottom: calc(3rem - 30px); }
+  .teacher-brand .item {
+    padding: 30px; }
+  .teacher-brand .b-testimonial {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    min-height: 485px; }
+    @media screen and (max-width: 768px) {
+      .teacher-brand .b-testimonial {
+        padding: 2rem; } }
+    .teacher-brand .b-testimonial__pic {
+      text-align: center; }
+      .teacher-brand .b-testimonial__pic img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        outline: 4px solid #ed8446;
+        object-fit: cover;
+        object-position: top;
+        margin: 0 auto 30px; }
+    .teacher-brand .b-testimonial__data {
+      text-align: center; }
+      .teacher-brand .b-testimonial__data h4 {
+        margin-top: 0;
+        margin-top: 3rem; }
+      .teacher-brand .b-testimonial__data h6 {
+        font-weight: 400;
+        font-size: 14px;
+        font-style: oblique;
+        text-align: center; }
+  .teacher-brand .owl-nav .owl-prev, .teacher-brand .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-content: center; }
+  .teacher-brand .owl-nav .owl-prev {
+    left: 0; }
+  .teacher-brand .owl-nav .owl-next {
+    right: 0; }
+
+.core-competentcies h6.heading-current {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.core-competentcies .border-02 {
+  background: #ed8446;
+  height: 5px;
+  width: 10rem;
+  margin: 1rem 0 2rem 0; }
+
+.core-competentcies img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; }
+
+@media screen and (max-width: 992px) {
+  .core-competentcies .primary-list {
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 992px) {
+  .core-competentcies h6 {
+    margin-top: 40px; } }
+
+.gcpl-media .media-container {
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.5s; }
+  .gcpl-media .media-container:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
+  .gcpl-media .media-container a {
+    position: relative;
+    display: block; }
+    .gcpl-media .media-container a::before {
+      content: "";
+      background: #ed8446;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s; }
+    .gcpl-media .media-container a:hover::before {
+      opacity: 0.3;
+      visibility: visible; }
+    .gcpl-media .media-container a:hover img {
+      transform: scale(1.1); }
+    .gcpl-media .media-container a img {
+      transition: all 0.5s;
+      min-height: 200px;
+      width: 100%;
+      object-fit: cover; }
+    .gcpl-media .media-container a span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      background: transparent;
+      color: #fff;
+      border: 1px solid transparent;
+      outline: 2px solid #fff;
+      padding: 1px 25px;
+      border-radius: 50px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: all 0.5s; }
+      .gcpl-media .media-container a span:hover {
+        background: #fff;
+        color: #114B5F;
+        border-color: #114B5F;
+        outline-color: #fff; }
+
+.gcpl-two {
+  margin-top: 40px; }
+  @media only screen and (max-width: 992px) {
+    .gcpl-two {
+      margin-top: 20px; } }
+  @media only screen and (max-width: 768px) {
+    .gcpl-two {
+      margin-top: 0px; } }
+
+.gallery .lightbox-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px; }
+  .gallery .lightbox-grid__item {
+    width: 100%;
+    cursor: pointer;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .gallery .lightbox-grid__item {
+        height: 210px; } }
+    .gallery .lightbox-grid__item:hover::before {
+      opacity: 1;
+      visibility: visible; }
+    .gallery .lightbox-grid__item:hover .zoom i {
+      opacity: 1;
+      visibility: visible; }
+    .gallery .lightbox-grid__item .zoom {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+      .gallery .lightbox-grid__item .zoom i {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 900;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s; }
+    .gallery .lightbox-grid__item::before {
+      content: "";
+      background: rgba(17, 75, 95, 0.2);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s; }
+    .gallery .lightbox-grid__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.gallery .modal-lg {
+  height: 100vh;
+  display: grid;
+  place-content: center; }
+
+.gallery .close {
+  opacity: 1 !important;
+  right: 0;
+  left: auto; }
+
+.upside {
+  background: #114B5F;
+  position: relative;
+  padding: 70px 0; }
+  .upside::before {
+    content: "";
+    background-image: url(https://dignity.disruptiveliteracy.com/wp-content/uploads/2023/09/connection-background-01.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .upside::after {
+    content: "";
+    background-image: url(../images/vector-01.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 204px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3; }
+  .upside .container {
+    position: relative; }
+  @media only screen and (max-width: 992px) {
+    .upside {
+      padding: 50px 0; } }
+  @media only screen and (max-width: 768px) {
+    .upside {
+      padding: 30px 0; } }
+
+.our-philospher h2 {
+  margin-bottom: 0; }
+
+.our-philospher ul.secondary-list li:not(:last-child) {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(17, 75, 95, 0.2); }
+
+.our-philospher .nav-pills {
+  margin-top: 40px;
+  margin-bottom: 0 !important; }
+
+.our-philospher li.nav-item {
+  width: calc(100% / 4);
+  text-align: center; }
+  @media screen and (max-width: 992px) {
+    .our-philospher li.nav-item {
+      width: calc(100% / 3); } }
+  @media screen and (max-width: 768px) {
+    .our-philospher li.nav-item {
+      width: calc(100% / 2); } }
+  .our-philospher li.nav-item a {
+    color: #114B5F;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    border: 1px solid #ed8446;
+    background: rgba(237, 132, 70, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem; }
+    .our-philospher li.nav-item a.active {
+      background: #ed8446; }
+      .our-philospher li.nav-item a.active i {
+        color: #fff; }
+  .our-philospher li.nav-item i {
+    color: #ed8446;
+    font-size: 1.5rem;
+    padding-right: 5px; }
+
+.our-philospher .tab-pane {
+  padding: 30px 40px;
+  border-top: none !important;
+  border: 1px solid #ed8446;
+  overflow-x: auto; }
+  .our-philospher .tab-pane table thead {
+    background: #ed8446; }
+    .our-philospher .tab-pane table thead th {
+      color: #fff; }
+  .our-philospher .tab-pane table tbody tr {
+    transition: all 0.5s; }
+    .our-philospher .tab-pane table tbody tr:nth-child(even) {
+      background: rgba(204, 204, 204, 0.4); }
+    .our-philospher .tab-pane table tbody tr:hover {
+      background: rgba(237, 132, 70, 0.1); }
+
+.self-confidence {
+  background: #114B5F;
+  padding: 70px 0; }
+  .self-confidence .sel-ref {
+    text-align: center;
+    font-size: 2rem;
+    background: #0f4152;
+    padding: 1.5rem; }
+    .self-confidence .sel-ref i {
+      color: #fff; }
+    .self-confidence .sel-ref h4 {
+      margin-bottom: 0;
+      font-weight: 300;
+      font-size: 24px; }
+
+.teacher-brand {
+  padding: 70px 0;
+  position: relative; }
+  .teacher-brand::before {
+    content: "";
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5baa344ea56827921b901e3e/1537887033415-G0TUIA40QHPEOJWUDLK8/testimonial-background.jpg?format=2500w);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    height: 100%; }
+  .teacher-brand .container {
+    position: relative; }
+  .teacher-brand h6 {
+    margin-bottom: calc(3rem - 30px); }
+  .teacher-brand .item {
+    padding: 30px; }
+  .teacher-brand .b-testimonial {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    min-height: 485px; }
+    @media screen and (max-width: 768px) {
+      .teacher-brand .b-testimonial {
+        padding: 2rem; } }
+    .teacher-brand .b-testimonial__pic {
+      text-align: center; }
+      .teacher-brand .b-testimonial__pic img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        outline: 4px solid #ed8446;
+        object-fit: cover;
+        object-position: top;
+        margin: 0 auto 30px; }
+    .teacher-brand .b-testimonial__data {
+      text-align: center; }
+      .teacher-brand .b-testimonial__data h4 {
+        margin-top: 0;
+        margin-top: 3rem; }
+      .teacher-brand .b-testimonial__data h6 {
+        font-weight: 400;
+        font-size: 14px;
+        font-style: oblique;
+        text-align: center; }
+  .teacher-brand .owl-nav .owl-prev, .teacher-brand .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-content: center; }
+  .teacher-brand .owl-nav .owl-prev {
+    left: 0; }
+  .teacher-brand .owl-nav .owl-next {
+    right: 0; }
+
+.core-competentcies h6.heading-current {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.core-competentcies .border-02 {
+  background: #ed8446;
+  height: 5px;
+  width: 10rem;
+  margin: 1rem 0 2rem 0; }
+
+.core-competentcies img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; }
+
+@media screen and (max-width: 992px) {
+  .core-competentcies .primary-list {
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 992px) {
+  .core-competentcies h6 {
+    margin-top: 40px; } }
+
+.school-model .owl-nav .owl-prev, .school-model .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 35px;
+  width: 35px;
+  display: grid;
+  place-content: center; }
+
+.school-model .owl-nav .owl-prev {
+  left: 0; }
+
+.school-model .owl-nav .owl-next {
+  right: 0; }
+
+.school-model .item {
+  padding: 30px; }
+
+.school-model .century-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  padding: 2rem 4rem;
+  border-radius: 10px; }
+  .school-model .century-card__img img {
+    width: 210px;
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto 30px; }
+  .school-model .century-card__content > strong {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    border-bottom: 1px solid rgba(17, 75, 95, 0.2); }
