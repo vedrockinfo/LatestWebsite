@@ -28,6 +28,9 @@
       background: no-repeat center center scroll;
       background-size: cover;
       transition: $transition;
+      @include respond (phone-before){
+        height: 160px;
+      }
       .caption {
         background-color: rgba($colorSecondary, 0.5);
         padding: 40px;
@@ -189,6 +192,11 @@
     }
 }
 .building-block{
+  .owl-drag{
+      @include respond (tab-land-before){
+        margin-bottom: 30px;
+      }
+    }
   .sub-heading{
     background: rgba($colorPrimary, $alpha: 1);
     display: inline-block;

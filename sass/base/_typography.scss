@@ -79,6 +79,9 @@ body {
     color: $colorWhite;
     text-transform: uppercase;
     text-align: center;
+    @include respond (tab-port-before){
+      font-size: 26px;
+    }
 }
 .content-para p, .content-para li, th, td {
   font-size: 16px;
