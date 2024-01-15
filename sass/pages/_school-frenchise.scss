@@ -1,0 +1,60 @@
+.frenchie-partner{
+    background: #f0f0f0;
+     padding: 70px 0;
+    @include respond(tab-land-before){
+      padding: 50px 0;
+    }
+    @include respond(tab-port-before){
+      padding: 30px 0;
+    }
+    .sub-heading{
+        margin-bottom: 30px;
+    }
+    img{
+        mix-blend-mode: darken;
+    }
+}
+
+.geti-action{
+    padding: 70px 0;
+    background: #dff0d8;
+    @include respond(tab-land-before){
+      padding: 50px 0;
+    }
+    @include respond(tab-port-before){
+      padding: 30px 0;
+    }
+}
+.geri-ebook{
+    table{
+        tr{
+            td{
+                &:not(:first-child){
+                    text-align: center;
+                    vertical-align: middle;
+                    .fa-solid, i{
+        font-size: 20px;
+    }
+    .fa-solid{
+        transform: rotate(-20deg);
+    }
+                    a{
+                        display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+    gap: 6px;
+    height: 100%;
+    color: $colorPrimary;
+    &:hover{
+        text-decoration: none;
+        color: $colorSecondary;
+    }
+                    }
+                }
+            }
+        }
+    }
+}
