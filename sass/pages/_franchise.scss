@@ -81,7 +81,7 @@ background: linear-gradient(90deg, $colorPrimary 50%, $colorSecondary 50%);
     background: linear-gradient(163.3deg, #ed8446 50%, #114B5F 50%);
 }
 h2{
-    font-size: 60px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
@@ -89,13 +89,8 @@ h2{
         font-size: 36px;
     }
 }
-h6{
-    font-size: 27px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    @media screen and (max-width:767.9px) {
-        font-size: 20px;
-    }
+p{
+ color: $colorWhite;   
 }
 .d-flex{
     gap: 20px;
