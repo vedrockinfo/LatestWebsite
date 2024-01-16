@@ -33,3 +33,15 @@ console.log(vedant);
 const vedantNew = `Hi Guys! My name is ${firstName}
 I'm a ${year - birth} years old ${job}`;
 console.log(vedantNew);
+
+// IF Else 
+
+const age = 16;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+    console.log("ULLu");
+}
+else {
+    console.log("i love u")
+}
