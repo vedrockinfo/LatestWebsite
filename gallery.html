@@ -8,11 +8,12 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="vendor/jquery/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="vendor/jquery/css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="vendor/jquery/css/jquery-ui.theme.min.css"> -->
     <link rel="stylesheet" href="vendor/owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/viewbox.css">
 </head>
 
 <body>
@@ -169,7 +170,7 @@
                 <h1 class="inner-primary-heading">gallery</h1>
             </div>
         </section>
-        <section class="gallery mt-large">
+        <!-- <section class="gallery mt-large">
             <div class="container">
                 <div id="gallery-lightbox" class="lightbox-grid" data-toggle="modal" data-target="#exampleModal">
                     <div class="lightbox-grid__item">
@@ -280,6 +281,62 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section class="gallery mt-large">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <a href="gallery_images/tour.jpg" class="thumbnail" title="San Francisco">
+                            <img src="gallery_images/tour.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/bg-1.gif" class="thumbnail" title="Rotterdam">
+                            <img src="gallery_images/bg-1.gif" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/bg-2.gif" class="thumbnail" title="New York">
+                            <img src="gallery_images/bg-2.gif" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/bg-6.gif" class="thumbnail" title="Istanbul">
+                            <img src="gallery_images/bg-6.gif" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/bg-11.gif" class="thumbnail" title="Istanbul">
+                            <img src="gallery_images/bg-11.gif" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/bg-12.gif" class="thumbnail" title="Istanbul">
+                            <img src="gallery_images/bg-12.gif" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/12.jpg" class="thumbnail" title="Istanbul">
+                            <img src="gallery_images/12.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/13.jpg" class="thumbnail" title="Istanbul">
+                            <img src="gallery_images/13.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/14.png" class="thumbnail" title="Istanbul">
+                            <img src="gallery_images/14.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="gallery_images/bg.jpg" class="thumbnail" title="Istanbul">
+                            <img src="gallery_images/bg.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="mt-large">
@@ -366,11 +423,31 @@
 
 
     <script src="vendor/jquery/js/jquery.min.js"></script>
-    <script src="vendor/jquery/js/jquery-ui.min.js"></script>
+    <!-- <script src="vendor/jquery/js/jquery-ui.min.js"></script> -->
+    <script src="vendor/jquery.viewbox.js"></script>
+    <script src="vendor/jquery.viewbox.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
     <script src="vendor/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(function () {
+
+            $('.thumbnail').viewbox();
+            $('.thumbnail-2').viewbox({ fullscreenButton: true });
+
+            (function () {
+                var vb = $('.popup-link').viewbox();
+                $('.popup-open-button').click(function () {
+                    vb.trigger('viewbox.open');
+                });
+                $('.close-button').click(function () {
+                    vb.trigger('viewbox.close');
+                });
+            })();
+
+        });
+    </script>
 </body>
 
 </html>
